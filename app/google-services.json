@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "78000615841",
+    "project_id": "il-learning",
+    "storage_bucket": "il-learning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78000615841:android:ecd84b88e91a039d7edbe0",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoJjRi4MdLE3BP6KXgXI9g3PSA-QjhE9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

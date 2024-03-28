@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_layout_elementary_title"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/lightBlue"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/subjects"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_layout_elementary_title"
+        android:background="@drawable/start_activity_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_BTN_Science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/Science"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/maim_BTN_Elementary_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/eMath"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/main_BTN_Elementary_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/English"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/main_BTN_Elementary_hebrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/hebrew"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/main_BTN_Elementary_geography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/geography"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/main_BTN_engineering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/lightBlue"
+            android:text="@string/engineering"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>
