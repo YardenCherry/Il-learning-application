@@ -39,11 +39,23 @@ IL-learning provides a user-friendly interface for both students and teachers to
  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/574f4b7a-75df-4eea-b163-b473eb2d822f" alt= TeacherProfile width= "215" height="430">
  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/1c01d1da-48d1-4542-a31c-96f43a50086e" alt= TeacherSubjects width= "215" height="430">
  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/5856a4ac-0eb2-43d0-af77-602de0e47062" alt= TeacherLessons width= "215" height="430">
- <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/0bbd5d0e-050e-4776-81b9-d57ee2f015aa" alt= TeacherLessons width= "215" height="430">
+ <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/0bbd5d0e-050e-4776-81b9-d57ee2f015aa" alt= TeacherDetails width= "215" height="430">
 
  ## Student's Screens: 
- 
+  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/d0eb2f2d-0550-4e09-9fc3-c38caa4e6ce7" alt= StudentMenu width= "215" height="430">
+  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/2ce177ad-2f4e-4cec-8086-1cf675d83e39" alt= StudentSubjects width= "215" height="430">
+  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/0228943c-f714-40d1-aec2-21f1555676cf" alt= StudentTeacherSubjects width= "215" height="430">
+  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/d70fb224-5c4f-4e90-9904-5813cb0542e3" alt= TeacherProfilwStudentView width= "215" height="430">
+  <img src = "https://github.com/YardenCherry/Il-learning-application/assets/155112044/e18472f3-d49b-48f0-b273-200a918e3b3a" alt= TeacherProfilwStudentView width= "215" height="430">
+  
+# License
 
+Copyright (c) 2024 Yarden Cherry
+
+
+## Authors
+
+- Yarden Cherry
 
 
 
