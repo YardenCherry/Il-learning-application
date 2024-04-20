@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:layout_weight="1"
+                android:hint="About Me"
+                android:inputType="textMultiLine"
+                android:maxLines="5" />
+
+            <EditText
+                android:id="@+id/cost_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cost"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/Sunday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:text="Sunday:"
+                android:textColor="@color/black" />
+            <Button
+                android:id="@+id/Monday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday:"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/Tuesday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday:"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/Wednesday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:text="Wednesday:"
+                android:textColor="@color/black" />
+            <Button
+                android:id="@+id/Thursday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday:"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/Friday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday:"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/Saturday_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturday:"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/black"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

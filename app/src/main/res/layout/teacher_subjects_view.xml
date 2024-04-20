@@ -7,21 +7,10 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/teacherNameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="16dp"/>
-
-
     <RelativeLayout
         android:id="@+id/fragmant_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/teacherNameLabel"
         >
         <ScrollView
             android:layout_width="match_parent"

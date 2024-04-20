@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lightBlue">#54C9C5</color>
     <color name="ErrorRed">#F62929</color>
+    <color name="yellow_400">#FFEE58</color>
+    <color name="orange_400">#FFA726</color>
 
 </resources>

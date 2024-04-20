@@ -2,14 +2,11 @@ package com.example.finalproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.View;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.finalproject.control.FireStoreService;
 import com.example.finalproject.control.LocalStorageService;
+import java.util.Map;
 
 public class MenuActivity extends AppCompatActivity {
     private Button register, teacherSignIn, studentSignIn;
@@ -20,11 +17,11 @@ public class MenuActivity extends AppCompatActivity {
         FireStoreService.initService();
         LocalStorageService.initService(MenuActivity.this);
         findViews();
-
         register.setOnClickListener(view -> goToRegister());
         teacherSignIn.setOnClickListener(view-> goToSignIn());
         studentSignIn.setOnClickListener(view-> goToSignIn());
     }
+
     private void findViews() {
         register = findViewById(R.id.menu_BTN_register);
         teacherSignIn = findViewById(R.id.menu_BTN_loginTeacher);
@@ -39,5 +36,20 @@ public class MenuActivity extends AppCompatActivity {
     public void goToSignIn(){
         Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
         startActivity(intent);
+    }
+    public void onStart() {
+        super.onStart();
+        if(LocalStorageService.getUser() != null){
+            Map<String, Object> userMap = LocalStorageService.getUser();
+            if(userMap.get("role").equals("Student")){
+                Intent goToUser = new Intent(MenuActivity.this, StudentActivity.class);
+                startActivity(goToUser);
+            }
+            else{
+                Intent goToUser = new Intent(MenuActivity.this, TeacherActivity.class);
+                startActivity(goToUser);
+            }
+
+        }
     }
 }

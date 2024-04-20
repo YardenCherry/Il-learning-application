@@ -1,9 +1,7 @@
 package com.example.finalproject.model;
 
 import androidx.annotation.NonNull;
-
 import com.google.gson.Gson;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -93,8 +91,19 @@ public class User {
         result.put("age",this.age);
         result.put("phoneNumber",this.number);
         result.put("role",this.role);
-        if(role==UserRole.TEACHER)
-            result.put("subjects",new ArrayList<String>());
+        result.put("Lessons", new ArrayList<String>());
+        if(role==UserRole.TEACHER) {
+            result.put("subjects", new ArrayList<String>());
+            result.put("Sunday", "Not working");
+            result.put("Monday", "Not working");
+            result.put("Tuesday", "Not working");
+            result.put("Wednesday", "Not working");
+            result.put("Thursday", "Not working");
+            result.put("Friday", "Not working");
+            result.put("Saturday", "Not working");
+            result.put("About me", " ");
+            result.put("Cost", "0");
+        }
         return result;
     }
 

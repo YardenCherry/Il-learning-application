@@ -4,13 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.example.finalproject.model.User;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
-import java.util.HashSet;
 import java.util.Map;
 
 
@@ -20,12 +16,9 @@ public class LocalStorageService {
     private SharedPreferences sharedPref;
     private static final String USER_KEY = "user";
 
-//    public void putString(String key, String value) {
-//        sharedPref.edit().putString(key,value).apply();
-//    }
-
     public static Map<String, Object> getUser(){
         String userJson = instance.sharedPref.getString(USER_KEY, "NONE");
+        if(userJson.equals("NONE")) return null;
         Gson j = new Gson();
         Map<String, Object> userMap = j.fromJson(userJson, new TypeToken<Map<String, Object>>(){}.getType());
         return userMap;
@@ -53,16 +46,15 @@ public class LocalStorageService {
         sharedPref = context.getSharedPreferences(DB_FILE, Context.MODE_PRIVATE);
     }
 
-    public static void updateUser(String id){
-        String userId = id.equals("") ? getUser().get("id").toString() : id;
+    public static void updateUser(DocumentSnapshot userDoc){
+        String userId = userDoc.getId();
 
-        FireStoreService.findUser(userId)
-                .addOnSuccessListener(documentSnapshot -> {
-                    Map<String, Object> userMap = documentSnapshot.getData();
-                    userMap.put("id", documentSnapshot.getId());
-                    instance.saveUser(userMap);
-                })
-                .addOnFailureListener(error -> {});
+        Map<String, Object> userMap = userDoc.getData();
+        userMap.put("id", userId);
+        saveUser(userMap);
+    }
+    public static void userLogOut(){
+        instance.sharedPref.edit().remove(USER_KEY).apply();
     }
 
 }
